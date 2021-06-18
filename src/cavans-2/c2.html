@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="never" />
+    <meta name="description" content="动效" />
+    <meta property="og:description" content="动效" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>发发-webpack</title>
+    <link id="favicon" rel="shortcut icon" href="//common.cnblogs.com/favicon.svg" type="image/svg+xml" />
+    
+    <link rel="stylesheet" href="/css/blog-common.min.css?v=6tvK5XC6GPbg3p_sy7wzz_2291HoYACr4440iKBzQIw" />
+    <link id="MainCss" rel="stylesheet" href="/skins/book/bundle-book.min.css?v=jeIWFbREsBywulLasTpkQaxky-lM6nSP4v7QSo89d0Y" />
+    <link type="text/css" rel="stylesheet" href="https://www.cnblogs.com/meijifu/custom.css?v=16X0dJpLNPG8hle26nekqPnCyQM=" />
+    <link id="mobile-style" media="only screen and (max-width: 767px)" type="text/css" rel="stylesheet" href="/skins/book/bundle-book-mobile.min.css?v=VScK2RSKmlDZjHFFPrzU6xRmTprJestCE7-RZpLjaKU" />
+    
+    <!-- <link type="application/rss+xml" rel="alternate" href="https://www.cnblogs.com/meijifu/rss" />
+    <link type="application/rsd+xml" rel="EditURI" href="https://www.cnblogs.com/meijifu/rsd.xml" />
+    <link type="application/wlwmanifest+xml" rel="wlwmanifest" href="https://www.cnblogs.com/meijifu/wlwmanifest.xml" /> -->
+   
+    <script src="https://common.cnblogs.com/scripts/jquery-2.2.0.min.js"></script>
+    <script src="/js/blog-common.min.js?v=l5MLSTLemATH1_zJmhkn0AWeaJtyzREb_jcbx3aWNaQ"></script>
+    
+    
+    
+</head>
+<body class="has-navbar has-bannerbar" style="background:#000;">
+    <div id="page_begin_html">
+        <!--雪花下落背景-->
+        <div class="Snow">
+            <canvas id="Snow"></canvas>
+        </div>
+    </div>
+    <script type="text/javascript">
+        try {
+            if (screen.availWidth > 1200) {
+                document.getElementById("MainCss").href = '/skins/book/bundle-book-2.min.css';
+            }
+        } catch (e) { }
+    </script>
+    <div id="page_end_html">
+        <!--看板娘-->
+        <script src="https://cdn.jsdelivr.net/npm/live2d-widget@3.0.4/lib/L2Dwidget.min.js"></script>
+        <script type="text/javascript">
+        L2Dwidget.init();
+        </script>
+        <!--多边形动态背景-->
+        <!-- <script src="https://blog-static.cnblogs.com/files/luzhanshi/zhizhuwang.js"></script> -->
+        <script src="/polygon.js"></script>
+
+        <!--雪花下落背景-->
+        <!-- 远程代码 -->
+        <!-- <script src="https://files.cnblogs.com/files/chendada/snow.js"></script> -->   
+        <!--本地代码  -->
+        <script src="/snowFlake.js"></script>
+    </div>
+</body>
+</html>
